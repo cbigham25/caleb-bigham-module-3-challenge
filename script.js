@@ -23,7 +23,10 @@ function writePassword() {
       alert("Character amount must be a number!")
       choosenAmount = prompt("How many characters would you like your password to be?")
     }
-
+    else if (choosenAmount < 8 || choosenAmount > 128) {
+      alert("Character amount must be between 8 and 128!")
+      choosenAmount = prompt("How many characters would you like your password to be?")
+    }
     return choosenAmount
 
   }
